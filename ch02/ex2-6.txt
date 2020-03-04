@@ -1,0 +1,15 @@
+예제 2.6 빌드 아티팩트
+
+Directory of nia\chapter2\Client\target
+03/16/2015 09:45 PM     <DIR>         classes
+03/16/2015 09:45 PM                   5,614 echo-client-1.0-SNAPSHOT.jar
+03/16/2015 09:45 PM     <DIR>         generated-sources
+03/16/2015 09:45 PM     <DIR>         maven-archiver
+03/16/2015 09:45 PM     <DIR>         maven-status
+
+Directory of nia\chapter2\Server/target
+03/16/2015 09:45 PM     <DIR>         classes
+03/16/2015 09:45 PM                   5,629 echo-server-1.0-SNAPSHOT.jar
+03/16/2015 09:45 PM     <DIR>         generated-sources
+03/16/2015 09:45 PM     <DIR>         maven-archiver
+03/16/2015 09:45 PM     <DIR>         maven-status

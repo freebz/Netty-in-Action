@@ -1,0 +1,52 @@
+예제 2.7 Echo 클라이언트의 예외 처리
+
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------
+[INFO] Building Echo Client 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------
+[INFO]
+[INFO] >>> exec-maven-plugin:1.2.1:java (default-cli) >
+    validate @ echo-client >>>
+[INFO]
+[INFO] <<< exec-maven-plugin:1.2.1:java (default-cli) <
+    validate @ echo-client <<<
+[INFO]
+[INFO] --- exec-maven-plugin:1.2.1:java (default-cli) @ echo-client --
+[WARNING]
+java.lang.reflect.InvocationTargetException
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    . . .
+    Caused by: java.net.ConnectException: Connection refused:
+    no further information: localhost/127.0.0.1:9999
+        at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl
+	.finishConnect(SocketChannelImpl.java:739)
+	at io.netty.channel.socket.nio.NioSocketChannel
+	.doFinishConnect(NioSocketChannel.java:208)
+	at io.netty.channel.nio
+	.AbstractNioChannel$AbstractNioUnsafe
+	.finishConnect(AbstractNioChannel.java:281)
+	at io.netty.channel.nio.NIoEventLoop
+	.processSelectedKey(NioEventLoop.java:528)
+	at io.netty.channel.nio.NioEventLoop.
+	processSelectedKeysOptimized(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop
+	.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2
+	.run(SingleThreadEventExecutor.java:116)
+	at io.netty.util.concurrent.DefaultThreadFactory
+	$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
+    . . .
+[INFO] ------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------
+[INFO] Total time: 3.801 s
+[INFO] Finished at: 2015-03-16T22:11:16-04:00
+[INFO] Final Memory: 10M/309M
+[INFO] ------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:
+    exec-maven-plugin:1.2.1:java (default-cli) on project echo-client:
+        An exception occured while executing the Java class. null:
+	InvocationTargetException: Connection refused:
+	no further information: localhost/127.0.0.1:9999 -> [Help 1]
