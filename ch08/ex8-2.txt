@@ -1,0 +1,16 @@
+예제 8.2 호환되는 EventLoopGroup과 Channel
+
+channel
+|------- nio
+|           NioEventLoopGroup
+|------- oio
+|           OioEventLoopGroup
+|------- socket
+         |------- nio
+	 |           NioDatagramChannel
+	 |           NioServerSocketChannel
+	 |           NioSocketChannel
+	 |------- oio
+	             OioDatagramChannel
+		     OioServerSocketChannel
+		     OioSocketChannel
