@@ -1,0 +1,16 @@
+예제 12.5 ChatServer 컴파일과 실행
+
+$ mvn -PChatServer clean package exec:exec
+
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------
+[INFO] Building ChatServer 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------
+...
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ netty-in-action --
+[INFO] Building jar: target/chat-server-1.0-SNAPSHOT.jar
+[INFO]
+[INFO] --- exec-maven-plugin:1.2.1:exec (default-cli) @ chat-server --
+Starting ChatServer on port 9999
