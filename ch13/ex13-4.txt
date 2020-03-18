@@ -1,0 +1,16 @@
+예제 13.4 LogEventBroadcaster 컴파일과 실행
+
+$ chapter14> mvn clean package exec:exec LogEventBroadcaster
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------
+[INFO] Building UDP Broadcast 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------
+...
+...
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ netty-in-action --
+[INFO] Building jar: target/chapter14-1.0-SNAPSHOT.jar
+[INFO]
+[INFO] --- exec-maven-plugin:1.2.1:exec (default-cli) @ netty-in-action .
+ LogEventBroadcaster running

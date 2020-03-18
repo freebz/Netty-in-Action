@@ -1,0 +1,8 @@
+예제 13.5 LogEventBroadcaster 컴파일과 실행
+
+$ chapter14> mvn clean package exec:exec -PLogEventBroadcaster /
+-Dlogfile=/var/log/mail.log .Dport=8888 -...
+...
+[INFO]
+[INFO] ---exec-maven-plugin:1.2.1:exec (default-cli) @ netty-in-action -
+LogEventBroadcaster running
