@@ -1,0 +1,12 @@
+<!-- 예제 A.1 POM 개요 -->
+
+<project>
+    <groupId/>
+    <artifactId/>
+    <version/>
+    <packaging/>
+    <properties/>
+    <dependencies/>
+    <build/>
+    <profiles/>
+</project>

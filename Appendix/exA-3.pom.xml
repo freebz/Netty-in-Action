@@ -1,0 +1,13 @@
+<!-- 예제 A.3 플러그인 상속 -->
+
+<build>
+    <plugins>
+	<plugin>
+	    <artifactId>maven-compiler-plugin</artifactId>
+	</plugin>
+	<plugin>
+	    <groupId>org.codehaus.mojo</groupId>
+	    <artifactId>exec-maven-plugin</artifactId>
+	</plugin>
+    </plugins>
+</build>

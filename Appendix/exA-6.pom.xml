@@ -1,0 +1,50 @@
+<!-- 예제 A.6 부모 및 집계자 POM: echo-parent -->
+
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+	<groupId>nia</groupId>
+	<artifactId>nia-samples-parent</artifactId>
+	<version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>chapter2</artifactId>
+    <packaging>pom</packaging>
+    <name>2. Echo Client and Server</name>
+
+    <modules>
+	<module>Client</module>
+	<module>Server</module>
+    </modules>
+
+    <properties>
+	<echo-server.hostname>localhost</echo-server.hostname>
+	<echo-server.port>9999</echo-server.port>
+    </properties>
+
+    <dependencies>
+	<dependency>
+	    <groupId>io.netty</groupId>
+	    <artifactId>netty-all</artifactId>
+	</dependency>
+    </dependencies>
+
+    <build>
+	<plugins>
+	    <plugin>
+		<artifactId>maven-compiler-plugin</artifactId>
+	    </plugin>
+	    <plugin>
+		<artifactId>maven-failsafe-plugin</artifactId>
+	    </plugin>
+	    <plugin>
+		<artifactId>maven-surefire-plugin</artifactId>
+	    </plugin>
+	    <plugin>
+		<groupId>org.codehaus.mojo</groupId>
+		<artifactId>exec-maven-plugin</artifactId>
+	    </plugin>
+	</plugins>
+    </build>
+</project>

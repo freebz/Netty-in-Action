@@ -1,0 +1,23 @@
+예제 A.5 chapter2 디렉터리 트리
+
+chapter2
+    |---pom.xml
+    |---\Client
+        |---pom.xml
+	|---\src
+	    |---\main
+	        |---\java
+		    |---\nia
+		        |---\chapter2
+			    |---\echoclient
+			        EchoClient.java
+				EchoClientHandler.java
+    |---\Server
+	|---\src
+	    |---\main
+		|---\java
+		    |---\nia
+			|---\chapter2
+			    |---\echoserver
+				EchoServer.java
+				EchoServerHandler.java
